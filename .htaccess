@@ -1,0 +1,14 @@
+RewriteEngine On
+
+     # 1. Statik Dosyaları Doğrudan Sun (Hız kazandırır ve 503'ü önler)
+     RewriteCond %{REQUEST_URI} ^/_next/static/(.*)$ [OR]
+     RewriteCond %{REQUEST_URI} ^/assets/(.*)$ [OR]
+     RewriteCond %{REQUEST_URI} ^/favicon.ico$
+     RewriteRule ^(.*)$ - [L]
+    
+     # 2. Passenger / Node.js Ayarları
+    PassengerAppRoot /home/u796098873/domains/obacelikyapi.com/public_html        
+    PassengerAppType node
+    PassengerNodejs /opt/alt/alt-nodejs20/root/bin/node
+    PassengerStartupFile server.js
+    PassengerBaseURI /

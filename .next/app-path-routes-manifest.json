@@ -1,0 +1,13 @@
+{
+  "/OBAadmin/login/page": "/OBAadmin/login",
+  "/OBAadmin/page": "/OBAadmin",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/blog/[id]/page": "/blog/[id]",
+  "/blog/page": "/blog",
+  "/favicon.ico/route": "/favicon.ico",
+  "/hakkimizda/page": "/hakkimizda",
+  "/hizmetler/page": "/hizmetler",
+  "/iletisim/page": "/iletisim",
+  "/page": "/"
+}

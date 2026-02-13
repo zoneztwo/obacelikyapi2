@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oba-orange: #EA6229;
+  --color-oba-light: #F6F6F6;
+  --color-oba-dark: #3D3D3D;
+  --color-background: #F6F6F6;
+  --color-foreground: #3D3D3D;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  --background: #F6F6F6;
+  --foreground: #3D3D3D;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

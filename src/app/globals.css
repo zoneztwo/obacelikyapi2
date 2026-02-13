@@ -6,6 +6,13 @@
   --color-oba-dark: #3D3D3D;
   --color-background: #F6F6F6;
   --color-foreground: #3D3D3D;
+
+  --animate-slow-zoom: slow-zoom 20s infinite alternate ease-in-out;
+
+  @keyframes slow-zoom {
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1.15); }
+  }
 }
 
 /* Custom Utilities */

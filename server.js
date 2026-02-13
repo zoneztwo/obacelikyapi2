@@ -2,8 +2,11 @@ const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');
 
-const dev = process.env.NODE_ENV !== 'production';
-const hostname = 'localhost';
+// Hostinger/Passenger icin NODE_ENV'i zorla production yap
+process.env.NODE_ENV = 'production';
+
+const dev = false;
+const hostname = undefined;
 const port = process.env.PORT || 3000;
 
 const app = next({ dev, hostname, port });
